@@ -2,12 +2,14 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'multi_json', '~>1.8.1'
+gem 'themoviedb'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
+  gem 'simplecov', :require=>false
   gem 'sqlite3'
 #  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'database_cleaner'
